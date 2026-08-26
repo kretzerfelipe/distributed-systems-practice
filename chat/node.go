@@ -126,7 +126,7 @@ func (n *Node) ListConnections() {
 		return
 	}
 
-	fmt.Printf("[i] você está conectado a %s participante(s):\n", len(n.connections))
+	fmt.Printf("[i] você está conectado a %d participante(s):\n", len(n.connections))
 
 	for conn := range n.connections {
 		fmt.Printf("    - %s\n", conn.RemoteAddr().String())
