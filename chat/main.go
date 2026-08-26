@@ -5,6 +5,11 @@ import (
 	"os"
 )
 
+const QuitCommand = "/quit"
+const ListCommand = "/list"
+const PrivateMsgCommand = "/msg"
+const StartConnection = "/start-connection "
+
 func main() {
 	if len(os.Args) < 3 {
 		fmt.Println("Uso: go run . [porta] [apelido] [ips]")
